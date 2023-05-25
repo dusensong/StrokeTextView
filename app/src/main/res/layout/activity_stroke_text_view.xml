@@ -1,42 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#59C8FA"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/iv"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        android:background="#59C8FA" />
-
     <com.hc.stroketextdemo.StrokeTextView
-        android:id="@+id/tv_old"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/tv_old_2"
-        android:layout_alignRight="@id/iv"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:text="100% OFF"
-        android:textColor="@color/white"
-        android:textSize="22sp" />
-
-    <com.hc.stroketextdemo.StrokeTextView
-        android:id="@+id/tv_old_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/iv"
-        android:layout_alignBottom="@id/iv"
         android:layout_marginTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:text="50% OFF"
+        android:text="单行STV：50% OFF"
         android:textColor="@color/white"
         android:textSize="22sp"
-        app:stv_strokeColor="#7E2579"
-        app:stv_strokeWidth="4dp"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
         android:fontFamily="@font/klarnaheadline_bold" />
 
-</RelativeLayout>
+    <com.hc.stroketextdemo.StrokeTextView1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="单行STV1：50% OFF"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
+        android:fontFamily="@font/klarnaheadline_bold" />
+
+    <com.hc.stroketextdemo.StrokeTextView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
+        app:text="单行STV2：50% OFF"
+        app:textColor="#FFFFFF"
+        app:textSize="12sp"
+        android:fontFamily="@font/klarnaheadline_bold" />
+
+    <com.hc.stroketextdemo.StrokeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:text="多行单行STV：\n50% OFF"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
+        android:fontFamily="@font/klarnaheadline_bold" />
+
+    <com.hc.stroketextdemo.StrokeTextView1
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="多行单行STV1：\n50% OFF"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
+        android:fontFamily="@font/klarnaheadline_bold" />
+
+    <com.hc.stroketextdemo.StrokeTextView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        app:strokeColor="#7E2579"
+        app:strokeWidth="4dp"
+        app:text="多行单行STV2：\n50% OFF"
+        app:textColor="#FFFFFF"
+        app:textSize="12sp"
+        android:fontFamily="@font/klarnaheadline_bold" />
+</LinearLayout>

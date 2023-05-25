@@ -39,8 +39,8 @@ public class StrokeTextView extends AppCompatTextView {
         super(context, attrs, defStyleAttr);
         //获取自定义的XML属性名称
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.StrokeTextView);
-        this.mStrokeColor = a.getColor(R.styleable.StrokeTextView_stv_strokeColor, getResources().getColor(R.color.black));
-        this.mStrokeWidth = a.getDimensionPixelSize(R.styleable.StrokeTextView_stv_strokeWidth, 3);
+        this.mStrokeColor = a.getColor(R.styleable.StrokeTextView_strokeColor, getResources().getColor(R.color.black));
+        this.mStrokeWidth = a.getDimensionPixelSize(R.styleable.StrokeTextView_strokeWidth, 3);
         a.recycle();
         init();
     }
